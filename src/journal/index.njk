@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: Journal
+heroTitle: Journal
+heroSubtitle: Planning, trail days, and reflections
+permalink: /journal/
+---
+
+{% set heroTitle = "Journal" %}
+{% set heroSubtitle = "Planning, trail days, and reflections" %}
+{% include "partials/hero.njk" %}
+
+<div class="container journal-index">
+
+  {# Before Phase #}
+  <section class="phase-section" id="before">
+    <h2 class="phase-section__title phase-section__title--before">Before — Planning &amp; Preparation</h2>
+    {% set beforePosts = collections.before %}
+    {% if beforePosts.length > 0 %}
+      <div class="post-grid">
+        {% for post in beforePosts %}
+          {% include "partials/post-card.njk" %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Planning posts coming soon.</p>
+    {% endif %}
+  </section>
+
+  {# During Phase #}
+  <section class="phase-section" id="during">
+    <h2 class="phase-section__title phase-section__title--during">During — On the Trail</h2>
+    {% set duringPosts = collections.during %}
+    {% if duringPosts.length > 0 %}
+      <div class="post-grid">
+        {% for post in duringPosts %}
+          {% include "partials/post-card.njk" %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Trail updates will appear here starting {{ site.startDate }}.</p>
+    {% endif %}
+  </section>
+
+  {# After Phase #}
+  <section class="phase-section" id="after">
+    <h2 class="phase-section__title phase-section__title--after">After — Reflections</h2>
+    {% set afterPosts = collections.after %}
+    {% if afterPosts.length > 0 %}
+      <div class="post-grid">
+        {% for post in afterPosts %}
+          {% include "partials/post-card.njk" %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Reflection posts will be written after the hike.</p>
+    {% endif %}
+  </section>
+
+</div>

@@ -1,0 +1,10 @@
+<section class="hero {% if heroHome %}hero--home{% endif %}" {% if heroImage %}style="background-image: url('{{ heroImage }}')"{% endif %}>
+  <div class="hero__overlay">
+    <div class="container hero__content">
+      <h1 class="hero__title">{{ heroTitle or site.title }}</h1>
+      {% if heroSubtitle %}
+        <p class="hero__subtitle">{{ heroSubtitle }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

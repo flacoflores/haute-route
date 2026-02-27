@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "startDate": "Jul 22, 2026",
+    "endDate": "Aug 9, 2026",
+    "totalDays": 19,
+    "hikingStages": 14,
+    "restDays": 5,
+    "totalMiles": "138.6",
+    "totalAscent": "48,520",
+    "totalDescent": "47,175"
+  },
+  "days": [
+    { "no": 1,  "stage": null, "day": "Wed", "date": "Jul 22", "departure": "Innsbruck", "arrival": "Chamonix",             "grade": null,     "dist": null, "asc": null,   "desc": null },
+    { "no": 2,  "stage": 1,   "day": "Thu", "date": "Jul 23", "departure": "Chamonix",  "arrival": "Argentiere",            "grade": "Red 4",   "dist": 11.1, "asc": 4396,  "desc": 3675 },
+    { "no": 3,  "stage": 2,   "day": "Fri", "date": "Jul 24", "departure": "Argentiere","arrival": "Trient / Martigny",     "grade": "Red 4",   "dist": 9.7,  "asc": 3806,  "desc": 3642 },
+    { "no": 4,  "stage": 3,   "day": "Sat", "date": "Jul 25", "departure": "Trient / Martigny", "arrival": "Les Champex",  "grade": "Red 3",   "dist": 9.8,  "asc": 3934,  "desc": 3934 },
+    { "no": 5,  "stage": 4,   "day": "Sun", "date": "Jul 26", "departure": "Les Champex","arrival": "Le Chable / Verbier", "grade": "Blue 4",  "dist": 13.8, "asc": 3707,  "desc": 3576 },
+    { "no": 6,  "stage": null, "day": "Mon", "date": "Jul 27", "departure": null,        "arrival": "Le Chable / Verbier", "grade": null,     "dist": null, "asc": null,   "desc": null },
+    { "no": 7,  "stage": 5,   "day": "Tue", "date": "Jul 28", "departure": "Le Chable / Verbier", "arrival": "Cabane de Louvre",    "grade": "Black 3", "dist": 8.3,  "asc": 4101,  "desc": 1739 },
+    { "no": 8,  "stage": 6,   "day": "Wed", "date": "Jul 29", "departure": "Cabane de Louvre",    "arrival": "Cabane de Prafleuri", "grade": "Black 2", "dist": 7.0,  "asc": 3084,  "desc": 1706 },
+    { "no": 9,  "stage": 7,   "day": "Thu", "date": "Jul 30", "departure": "Cabane de Prafleuri", "arrival": "Arolla",              "grade": "Black 3", "dist": 11.4, "asc": 2428,  "desc": 4560 },
+    { "no": 10, "stage": 8,   "day": "Fri", "date": "Jul 31", "departure": "Arolla",              "arrival": "La Sage",             "grade": "Red 2",   "dist": 6.9,  "asc": 1181,  "desc": 2329 },
+    { "no": 11, "stage": 9,   "day": "Sat", "date": "Aug 1",  "departure": "La Sage",             "arrival": "Cabane de Moiry",     "grade": "Purple 4","dist": 7.5,  "asc": 5545,  "desc": 1739 },
+    { "no": 12, "stage": 10,  "day": "Sun", "date": "Aug 2",  "departure": "Cabane de Moiry",     "arrival": "Zinal",               "grade": "Purple 3","dist": 9.8,  "asc": 2198,  "desc": 5971 },
+    { "no": 13, "stage": null, "day": "Mon", "date": "Aug 3",  "departure": null,                  "arrival": "Zinal",               "grade": null,     "dist": null, "asc": null,   "desc": null },
+    { "no": 14, "stage": 11,  "day": "Tue", "date": "Aug 4",  "departure": "Zinal",               "arrival": "Gruben",              "grade": "Red 4",   "dist": 11.0, "asc": 4003,  "desc": 3543 },
+    { "no": 15, "stage": 12,  "day": "Wed", "date": "Aug 5",  "departure": "Gruben",              "arrival": "St. Niklaus",         "grade": "Purple 4","dist": 10.9, "asc": 3576,  "desc": 5873 },
+    { "no": 16, "stage": null, "day": "Thu", "date": "Aug 6",  "departure": null,                  "arrival": "St. Niklaus",         "grade": null,     "dist": null, "asc": null,   "desc": null },
+    { "no": 17, "stage": 13,  "day": "Fri", "date": "Aug 7",  "departure": "St. Niklaus",         "arrival": "Europahutte",         "grade": "Black 3", "dist": 7.5,  "asc": 4626,  "desc": 820  },
+    { "no": 18, "stage": 14,  "day": "Sat", "date": "Aug 8",  "departure": "Europahutte",         "arrival": "Zermatt",             "grade": "Black 4", "dist": 13.9, "asc": 1936,  "desc": 4068 },
+    { "no": 19, "stage": null, "day": "Sun", "date": "Aug 9",  "departure": null,                  "arrival": "Zermatt",             "grade": null,     "dist": null, "asc": null,   "desc": null }
+  ]
+}

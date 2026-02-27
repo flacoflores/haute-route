@@ -1,0 +1,34 @@
+{% if distance or elevationGain or time or weather %}
+<div class="stats-bar">
+  {% if day %}
+    <div class="stats-bar__item">
+      <span class="stats-bar__label">Day</span>
+      <span class="stats-bar__value">{{ day }} / {{ site.totalStages }}</span>
+    </div>
+  {% endif %}
+  {% if distance %}
+    <div class="stats-bar__item">
+      <span class="stats-bar__label">Distance</span>
+      <span class="stats-bar__value">{{ distance }}</span>
+    </div>
+  {% endif %}
+  {% if elevationGain %}
+    <div class="stats-bar__item">
+      <span class="stats-bar__label">Elevation Gain</span>
+      <span class="stats-bar__value">{{ elevationGain }}</span>
+    </div>
+  {% endif %}
+  {% if time %}
+    <div class="stats-bar__item">
+      <span class="stats-bar__label">Time</span>
+      <span class="stats-bar__value">{{ time }}</span>
+    </div>
+  {% endif %}
+  {% if weather %}
+    <div class="stats-bar__item">
+      <span class="stats-bar__label">Weather</span>
+      <span class="stats-bar__value">{{ weather }}</span>
+    </div>
+  {% endif %}
+</div>
+{% endif %}

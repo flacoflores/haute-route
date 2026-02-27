@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+title: Home
+---
+
+{% set heroTitle = site.title %}
+{% set heroSubtitle = site.subtitle ~ " — " ~ site.totalDistance ~ " through the Alps" %}
+{% set heroImage = "" %}
+{% set heroHome = true %}
+{% include "partials/hero.njk" %}
+
+<div class="container">
+
+  {# Countdown / Status Timer #}
+  <div class="countdown" id="countdown" data-start="{{ site.startDate }}" data-end="{{ site.endDate }}">
+    <div class="countdown__label">Loading...</div>
+    <div class="countdown__value">&nbsp;</div>
+  </div>
+
+  {# Trip Overview #}
+  <section class="overview">
+    <div class="overview__text">
+      <h2>The Journey</h2>
+      <p>{{ site.description }}</p>
+      <p>Starting in Chamonix, France at the foot of Mont Blanc and finishing in Zermatt, Switzerland beneath the Matterhorn. {{ site.totalStages }} stages of high-altitude hiking through some of the most spectacular mountain scenery in Europe.</p>
+    </div>
+    <div class="overview__stats">
+      <div class="overview__stat">
+        <div class="overview__stat-value">{{ site.totalDistance }}</div>
+        <div class="overview__stat-label">Total Distance</div>
+      </div>
+      <div class="overview__stat">
+        <div class="overview__stat-value">{{ site.totalElevationGain }}</div>
+        <div class="overview__stat-label">Elevation Gain</div>
+      </div>
+      <div class="overview__stat">
+        <div class="overview__stat-value">{{ site.totalStages }}</div>
+        <div class="overview__stat-label">Stages</div>
+      </div>
+      <div class="overview__stat">
+        <div class="overview__stat-value">2</div>
+        <div class="overview__stat-label">Countries</div>
+      </div>
+    </div>
+  </section>
+
+  {# Phase Navigation Cards #}
+  <section class="home-section">
+    <h2 class="home-section__title">Follow the Journey</h2>
+    <div class="phase-cards">
+      <a href="/journal/#before" class="phase-card phase-card--before">
+        <h3 class="phase-card__title">Before</h3>
+        <p class="phase-card__desc">Planning, preparation, and training for the trek</p>
+      </a>
+      <a href="/journal/#during" class="phase-card phase-card--during">
+        <h3 class="phase-card__title">During</h3>
+        <p class="phase-card__desc">Daily journal entries from the trail</p>
+      </a>
+      <a href="/journal/#after" class="phase-card phase-card--after">
+        <h3 class="phase-card__title">After</h3>
+        <p class="phase-card__desc">Reflections and lessons learned</p>
+      </a>
+    </div>
+  </section>
+
+  {# Latest Post #}
+  {% set latestPosts = collections.journal | reverse %}
+  {% if latestPosts.length > 0 %}
+    <section class="home-section">
+      <h2 class="home-section__title">Latest Update</h2>
+      <div class="post-grid">
+        {% set post = latestPosts[0] %}
+        {% include "partials/post-card.njk" %}
+      </div>
+    </section>
+  {% endif %}
+
+  {# Mini Map #}
+  <section class="home-section">
+    <h2 class="home-section__title">The Route</h2>
+    <div class="mini-map" id="mini-map"></div>
+    <p class="text-center"><a href="/map/">View full interactive map &rarr;</a></p>
+  </section>
+
+</div>
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/assets/css/map.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/assets/js/map.js"></script>
+<script src="/assets/js/countdown.js"></script>
+<script>
+  initMap("mini-map", {
+    mini: true,
+    stages: {{ route.stages | dump | safe }}
+  });
+</script>
+{% endblock %}

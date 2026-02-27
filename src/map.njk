@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+title: Route Map
+permalink: /map/
+---
+
+{% set heroTitle = "Route Map" %}
+{% set heroSubtitle = "Chamonix to Zermatt — " ~ site.totalDistance ~ " across the Alps" %}
+{% include "partials/hero.njk" %}
+
+<div class="map-page">
+  <div class="map-container" id="route-map"></div>
+</div>
+
+<div class="container">
+  <h2 style="margin-top: 2rem;">Stage Summary</h2>
+  <div style="overflow-x: auto;">
+    <table class="route-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Distance</th>
+          <th>Gain</th>
+          <th>Loss</th>
+          <th>Time</th>
+          <th>Accommodation</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stage in route.stages %}
+        <tr>
+          <td>{{ stage.day }}</td>
+          <td>{{ stage.from }}</td>
+          <td>{{ stage.to }}</td>
+          <td>{{ stage.distance }}</td>
+          <td>{{ stage.elevationGain }}</td>
+          <td>{{ stage.elevationLoss }}</td>
+          <td>{{ stage.time }}</td>
+          <td>{{ stage.accommodation }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% block head %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/assets/css/map.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+<script src="/assets/js/map.js"></script>
+<script>
+  initMap("route-map", {
+    mini: false,
+    gpxUrl: "/assets/gpx/haute-route.gpx",
+    stages: {{ route.stages | dump | safe }}
+  });
+</script>
+{% endblock %}

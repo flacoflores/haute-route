@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: Photo Gallery
+permalink: /gallery/
+---
+
+{% set heroTitle = "Photo Gallery" %}
+{% set heroSubtitle = "Moments from the trail" %}
+{% include "partials/hero.njk" %}
+
+<div class="container page-content">
+  <div class="gallery-empty">
+    <p>Photos will be added as the journey unfolds.</p>
+    <p>Check back during and after the hike for trail photos!</p>
+  </div>
+
+  {#
+    When adding photos, replace the empty state above with gallery sections like:
+
+    <div class="gallery-day">
+      <h2 class="gallery-day__title">Day 1 — Chamonix to Argentière</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-grid__item">
+          <img src="/photos/day-01/photo-01.jpg" alt="Description" loading="lazy">
+          <figcaption>Description</figcaption>
+        </figure>
+      </div>
+    </div>
+  #}
+</div>
+
+{# Lightbox markup #}
+<div class="lightbox">
+  <button class="lightbox__close" aria-label="Close">&times;</button>
+  <button class="lightbox__prev" aria-label="Previous">&lsaquo;</button>
+  <button class="lightbox__next" aria-label="Next">&rsaquo;</button>
+  <img class="lightbox__img" src="" alt="">
+  <div class="lightbox__caption"></div>
+</div>
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/gallery.css">
+{% endblock %}
+
+{% block scripts %}
+<script src="/assets/js/gallery.js"></script>
+{% endblock %}

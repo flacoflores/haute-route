@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "name": "Shelter & Sleep",
+      "items": [
+        { "item": "Sleeping bag liner (silk)", "weight": 140, "notes": "Huts provide blankets" },
+        { "item": "Inflatable pillow", "weight": 56, "notes": "" },
+        { "item": "Earplugs + eye mask", "weight": 15, "notes": "Essential for dorm rooms" }
+      ]
+    },
+    {
+      "name": "Clothing — Worn",
+      "items": [
+        { "item": "Merino t-shirt", "weight": 150, "notes": "" },
+        { "item": "Hiking shorts", "weight": 180, "notes": "" },
+        { "item": "Merino underwear", "weight": 65, "notes": "" },
+        { "item": "Merino hiking socks", "weight": 80, "notes": "" },
+        { "item": "Trail runners (Salomon X Ultra 4)", "weight": 740, "notes": "Broken in" },
+        { "item": "Sun hat", "weight": 60, "notes": "" },
+        { "item": "Sunglasses", "weight": 30, "notes": "Category 4" }
+      ]
+    },
+    {
+      "name": "Clothing — Packed",
+      "items": [
+        { "item": "Merino long sleeve", "weight": 180, "notes": "Sleep / cold layer" },
+        { "item": "Merino leggings", "weight": 150, "notes": "" },
+        { "item": "Spare merino underwear", "weight": 65, "notes": "" },
+        { "item": "Spare merino socks", "weight": 80, "notes": "" },
+        { "item": "Rain jacket (Patagonia Torrentshell)", "weight": 315, "notes": "" },
+        { "item": "Rain pants", "weight": 200, "notes": "Lightweight" },
+        { "item": "Fleece midlayer", "weight": 280, "notes": "" },
+        { "item": "Insulated jacket (down)", "weight": 340, "notes": "For evenings at altitude" },
+        { "item": "Buff / neck gaiter", "weight": 35, "notes": "" },
+        { "item": "Lightweight gloves", "weight": 40, "notes": "" },
+        { "item": "Camp sandals", "weight": 180, "notes": "" }
+      ]
+    },
+    {
+      "name": "Pack & Organization",
+      "items": [
+        { "item": "Backpack (Osprey Exos 38)", "weight": 890, "notes": "" },
+        { "item": "Pack rain cover", "weight": 100, "notes": "" },
+        { "item": "Dry bags (set of 3)", "weight": 80, "notes": "" },
+        { "item": "Stuff sack for dirty clothes", "weight": 20, "notes": "" }
+      ]
+    },
+    {
+      "name": "Navigation & Electronics",
+      "items": [
+        { "item": "Phone (iPhone)", "weight": 206, "notes": "Camera, maps, journal" },
+        { "item": "Battery pack (10,000 mAh)", "weight": 180, "notes": "" },
+        { "item": "Charging cables (USB-C + Lightning)", "weight": 40, "notes": "" },
+        { "item": "Wall charger (GaN, dual port)", "weight": 65, "notes": "" },
+        { "item": "Headlamp (Petzl Actik Core)", "weight": 75, "notes": "" },
+        { "item": "Paper map (backup)", "weight": 50, "notes": "Swiss Topo 1:50k" }
+      ]
+    },
+    {
+      "name": "Food & Water",
+      "items": [
+        { "item": "Water bottles (2x 1L soft flask)", "weight": 60, "notes": "" },
+        { "item": "Water filter (Katadyn BeFree)", "weight": 60, "notes": "" },
+        { "item": "Snacks (per day avg)", "weight": 200, "notes": "Bars, nuts, dried fruit" },
+        { "item": "Electrolyte tablets", "weight": 30, "notes": "" }
+      ]
+    },
+    {
+      "name": "Safety & First Aid",
+      "items": [
+        { "item": "First aid kit", "weight": 180, "notes": "Blister care, tape, meds, antiseptic" },
+        { "item": "Trekking poles (pair, carbon)", "weight": 380, "notes": "Black Diamond Distance Carbon Z" },
+        { "item": "Emergency whistle", "weight": 10, "notes": "Built into pack sternum strap" },
+        { "item": "Emergency blanket", "weight": 50, "notes": "" },
+        { "item": "Duct tape (wrapped around pole)", "weight": 20, "notes": "" }
+      ]
+    },
+    {
+      "name": "Toiletries",
+      "items": [
+        { "item": "Toothbrush + toothpaste", "weight": 40, "notes": "" },
+        { "item": "Sunscreen (SPF 50)", "weight": 80, "notes": "Essential at altitude" },
+        { "item": "Lip balm (SPF 30)", "weight": 10, "notes": "" },
+        { "item": "Hand sanitizer", "weight": 40, "notes": "" },
+        { "item": "Biodegradable soap (small)", "weight": 30, "notes": "" },
+        { "item": "Quick-dry towel (small)", "weight": 50, "notes": "" },
+        { "item": "Toilet paper + trowel", "weight": 40, "notes": "" }
+      ]
+    },
+    {
+      "name": "Documents",
+      "items": [
+        { "item": "Passport", "weight": 40, "notes": "Crossing France–Switzerland" },
+        { "item": "Swiss Franc + Euro cash", "weight": 20, "notes": "Some huts are cash only" },
+        { "item": "Credit card", "weight": 5, "notes": "" },
+        { "item": "Insurance card + emergency contacts", "weight": 5, "notes": "Laminated" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="post">
+  {% set heroTitle = title %}
+  {% set heroSubtitle = date | dateDisplay %}
+  {% include "partials/hero.njk" %}
+
+  <div class="container">
+    {% include "partials/stats-bar.njk" %}
+
+    <div class="post__body prose">
+      {{ content | safe }}
+    </div>
+
+    {% if photos and photos.length %}
+      <div class="post__photos">
+        <h2>Photos</h2>
+        <div class="photo-grid">
+          {% for photo in photos %}
+            <figure class="photo-grid__item">
+              <img src="{{ photo.src }}" alt="{{ photo.alt or title }}" loading="lazy">
+              {% if photo.caption %}
+                <figcaption>{{ photo.caption }}</figcaption>
+              {% endif %}
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <nav class="post__nav" aria-label="Previous and next posts">
+      {% set allJournal = collections.journal %}
+      {% set currentIndex = -1 %}
+      {% for entry in allJournal %}
+        {% if entry.url == page.url %}
+          {% set currentIndex = loop.index0 %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="post__nav-links">
+        {% if currentIndex > 0 %}
+          <a href="{{ allJournal[currentIndex - 1].url }}" class="post__nav-prev">
+            &larr; {{ allJournal[currentIndex - 1].data.title }}
+          </a>
+        {% else %}
+          <span></span>
+        {% endif %}
+
+        {% if currentIndex < allJournal.length - 1 and currentIndex >= 0 %}
+          <a href="{{ allJournal[currentIndex + 1].url }}" class="post__nav-next">
+            {{ allJournal[currentIndex + 1].data.title }} &rarr;
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</article>

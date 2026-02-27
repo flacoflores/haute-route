@@ -1,0 +1,172 @@
+{
+  "stages": [
+    {
+      "day": 1,
+      "from": "Chamonix",
+      "to": "Argentière",
+      "distance": "10 km",
+      "elevationGain": "650 m",
+      "elevationLoss": "300 m",
+      "time": "4-5 hrs",
+      "lat": 45.9833,
+      "lng": 6.8731,
+      "accommodation": "Gîte Le Belvedere"
+    },
+    {
+      "day": 2,
+      "from": "Argentière",
+      "to": "Trient",
+      "distance": "14 km",
+      "elevationGain": "1100 m",
+      "elevationLoss": "1050 m",
+      "time": "6-7 hrs",
+      "lat": 46.0558,
+      "lng": 6.9919,
+      "accommodation": "Auberge du Mont Blanc"
+    },
+    {
+      "day": 3,
+      "from": "Trient",
+      "to": "Champex",
+      "distance": "14 km",
+      "elevationGain": "900 m",
+      "elevationLoss": "750 m",
+      "time": "5-6 hrs",
+      "lat": 46.0283,
+      "lng": 7.1181,
+      "accommodation": "Hôtel Splendide"
+    },
+    {
+      "day": 4,
+      "from": "Champex",
+      "to": "Le Châble",
+      "distance": "15 km",
+      "elevationGain": "500 m",
+      "elevationLoss": "1100 m",
+      "time": "5-6 hrs",
+      "lat": 46.0967,
+      "lng": 7.2211,
+      "accommodation": "Hôtel Giétri"
+    },
+    {
+      "day": 5,
+      "from": "Le Châble",
+      "to": "Cabane du Mont Fort",
+      "distance": "11 km",
+      "elevationGain": "1650 m",
+      "elevationLoss": "200 m",
+      "time": "6-7 hrs",
+      "lat": 46.0789,
+      "lng": 7.2975,
+      "accommodation": "Cabane du Mont Fort"
+    },
+    {
+      "day": 6,
+      "from": "Cabane du Mont Fort",
+      "to": "Cabane de Prafleuri",
+      "distance": "14 km",
+      "elevationGain": "800 m",
+      "elevationLoss": "1100 m",
+      "time": "6-7 hrs",
+      "lat": 46.0958,
+      "lng": 7.3433,
+      "accommodation": "Cabane de Prafleuri"
+    },
+    {
+      "day": 7,
+      "from": "Cabane de Prafleuri",
+      "to": "Arolla",
+      "distance": "15 km",
+      "elevationGain": "700 m",
+      "elevationLoss": "1200 m",
+      "time": "6-7 hrs",
+      "lat": 46.0289,
+      "lng": 7.4342,
+      "accommodation": "Hôtel Kurhaus"
+    },
+    {
+      "day": 8,
+      "from": "Arolla",
+      "to": "La Sage",
+      "distance": "10 km",
+      "elevationGain": "500 m",
+      "elevationLoss": "700 m",
+      "time": "4-5 hrs",
+      "lat": 46.0817,
+      "lng": 7.4761,
+      "accommodation": "Hôtel de La Sage"
+    },
+    {
+      "day": 9,
+      "from": "La Sage",
+      "to": "Cabane de Moiry",
+      "distance": "14 km",
+      "elevationGain": "1300 m",
+      "elevationLoss": "400 m",
+      "time": "6-7 hrs",
+      "lat": 46.1103,
+      "lng": 7.5589,
+      "accommodation": "Cabane de Moiry"
+    },
+    {
+      "day": 10,
+      "from": "Cabane de Moiry",
+      "to": "Zinal",
+      "distance": "12 km",
+      "elevationGain": "400 m",
+      "elevationLoss": "1300 m",
+      "time": "5-6 hrs",
+      "lat": 46.1350,
+      "lng": 7.6258,
+      "accommodation": "Hôtel Le Besso"
+    },
+    {
+      "day": 11,
+      "from": "Zinal",
+      "to": "Gruben",
+      "distance": "16 km",
+      "elevationGain": "1200 m",
+      "elevationLoss": "1100 m",
+      "time": "7-8 hrs",
+      "lat": 46.1731,
+      "lng": 7.7119,
+      "accommodation": "Schwarzhorn Hotel"
+    },
+    {
+      "day": 12,
+      "from": "Gruben",
+      "to": "St. Niklaus",
+      "distance": "13 km",
+      "elevationGain": "800 m",
+      "elevationLoss": "1400 m",
+      "time": "6-7 hrs",
+      "lat": 46.1789,
+      "lng": 7.8028,
+      "accommodation": "Hotel Alpenblick"
+    },
+    {
+      "day": 13,
+      "from": "St. Niklaus",
+      "to": "Europaweg / Täschalp",
+      "distance": "15 km",
+      "elevationGain": "1400 m",
+      "elevationLoss": "600 m",
+      "time": "7-8 hrs",
+      "lat": 46.1211,
+      "lng": 7.8267,
+      "accommodation": "Europahütte"
+    },
+    {
+      "day": 14,
+      "from": "Europaweg",
+      "to": "Zermatt",
+      "distance": "12 km",
+      "elevationGain": "300 m",
+      "elevationLoss": "1200 m",
+      "time": "5-6 hrs",
+      "lat": 46.0207,
+      "lng": 7.7491,
+      "accommodation": "Celebration dinner!"
+    }
+  ]
+}

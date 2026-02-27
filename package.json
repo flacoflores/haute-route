@@ -1,0 +1,15 @@
+{
+  "name": "haute-route",
+  "version": "1.0.0",
+  "description": "Richard's Haute Route thru-hike: Chamonix to Zermatt",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": ["hiking", "haute-route", "alps"],
+  "author": "Richard",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+title: Gear List
+permalink: /gear/
+---
+
+{% set heroTitle = "Gear List" %}
+{% set heroSubtitle = "Everything in my pack for 14 days in the Alps" %}
+{% include "partials/hero.njk" %}
+
+<div class="container page-content">
+
+  {% set totalWeight = 0 %}
+
+  {% for category in gear.categories %}
+    {% set categoryWeight = 0 %}
+    <div class="gear-category">
+      <h2 class="gear-category__title">{{ category.name }}</h2>
+      <table class="gear-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th style="text-align: right;">Weight (g)</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in category.items %}
+            {% set totalWeight = totalWeight + item.weight %}
+            {% set categoryWeight = categoryWeight + item.weight %}
+            <tr>
+              <td>{{ item.item }}</td>
+              <td class="gear-table__weight">{{ item.weight }}</td>
+              <td class="gear-table__notes">{{ item.notes }}</td>
+            </tr>
+          {% endfor %}
+          <tr>
+            <td><strong>Subtotal</strong></td>
+            <td class="gear-table__weight"><strong>{{ categoryWeight }} g</strong></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  {% endfor %}
+
+  <div class="gear-total">
+    <div class="gear-total__label">Total Base Weight</div>
+    <div class="gear-total__value">{{ totalWeight }} g ({{ (totalWeight / 1000) | round(1) }} kg)</div>
+  </div>
+
+</div>

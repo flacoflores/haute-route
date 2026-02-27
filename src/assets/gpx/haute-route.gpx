@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="HauteRoute" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Walker's Haute Route: Chamonix to Zermatt</name>
+    <desc>14-stage hiking route through the Swiss and French Alps</desc>
+  </metadata>
+  <trk>
+    <name>Haute Route</name>
+    <trkseg>
+      <!-- Day 1: Chamonix to Argentière -->
+      <trkpt lat="45.9237" lon="6.8694"><ele>1035</ele></trkpt>
+      <trkpt lat="45.9280" lon="6.8710"><ele>1050</ele></trkpt>
+      <trkpt lat="45.9350" lon="6.8700"><ele>1060</ele></trkpt>
+      <trkpt lat="45.9450" lon="6.8680"><ele>1080</ele></trkpt>
+      <trkpt lat="45.9550" lon="6.8690"><ele>1120</ele></trkpt>
+      <trkpt lat="45.9650" lon="6.8700"><ele>1180</ele></trkpt>
+      <trkpt lat="45.9750" lon="6.8720"><ele>1250</ele></trkpt>
+      <trkpt lat="45.9833" lon="6.8731"><ele>1252</ele></trkpt>
+      <!-- Day 2: Argentière to Trient -->
+      <trkpt lat="45.9900" lon="6.8800"><ele>1400</ele></trkpt>
+      <trkpt lat="46.0000" lon="6.8900"><ele>1600</ele></trkpt>
+      <trkpt lat="46.0100" lon="6.9000"><ele>1800</ele></trkpt>
+      <trkpt lat="46.0200" lon="6.9200"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0300" lon="6.9400"><ele>2350</ele></trkpt>
+      <trkpt lat="46.0400" lon="6.9600"><ele>2000</ele></trkpt>
+      <trkpt lat="46.0500" lon="6.9800"><ele>1600</ele></trkpt>
+      <trkpt lat="46.0558" lon="6.9919"><ele>1297</ele></trkpt>
+      <!-- Day 3: Trient to Champex -->
+      <trkpt lat="46.0550" lon="7.0100"><ele>1500</ele></trkpt>
+      <trkpt lat="46.0500" lon="7.0300"><ele>1700</ele></trkpt>
+      <trkpt lat="46.0450" lon="7.0500"><ele>1900</ele></trkpt>
+      <trkpt lat="46.0400" lon="7.0700"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0350" lon="7.0900"><ele>1800</ele></trkpt>
+      <trkpt lat="46.0300" lon="7.1000"><ele>1600</ele></trkpt>
+      <trkpt lat="46.0283" lon="7.1181"><ele>1466</ele></trkpt>
+      <!-- Day 4: Champex to Le Châble -->
+      <trkpt lat="46.0350" lon="7.1300"><ele>1500</ele></trkpt>
+      <trkpt lat="46.0450" lon="7.1500"><ele>1600</ele></trkpt>
+      <trkpt lat="46.0550" lon="7.1700"><ele>1700</ele></trkpt>
+      <trkpt lat="46.0650" lon="7.1800"><ele>1500</ele></trkpt>
+      <trkpt lat="46.0800" lon="7.1900"><ele>1200</ele></trkpt>
+      <trkpt lat="46.0900" lon="7.2100"><ele>900</ele></trkpt>
+      <trkpt lat="46.0967" lon="7.2211"><ele>821</ele></trkpt>
+      <!-- Day 5: Le Châble to Cabane du Mont Fort -->
+      <trkpt lat="46.0950" lon="7.2300"><ele>1000</ele></trkpt>
+      <trkpt lat="46.0930" lon="7.2500"><ele>1400</ele></trkpt>
+      <trkpt lat="46.0900" lon="7.2600"><ele>1800</ele></trkpt>
+      <trkpt lat="46.0870" lon="7.2700"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0830" lon="7.2800"><ele>2400</ele></trkpt>
+      <trkpt lat="46.0789" lon="7.2975"><ele>2457</ele></trkpt>
+      <!-- Day 6: Cabane du Mont Fort to Cabane de Prafleuri -->
+      <trkpt lat="46.0800" lon="7.3050"><ele>2500</ele></trkpt>
+      <trkpt lat="46.0830" lon="7.3150"><ele>2700</ele></trkpt>
+      <trkpt lat="46.0860" lon="7.3200"><ele>2900</ele></trkpt>
+      <trkpt lat="46.0900" lon="7.3300"><ele>2600</ele></trkpt>
+      <trkpt lat="46.0930" lon="7.3350"><ele>2400</ele></trkpt>
+      <trkpt lat="46.0958" lon="7.3433"><ele>2624</ele></trkpt>
+      <!-- Day 7: Cabane de Prafleuri to Arolla -->
+      <trkpt lat="46.0900" lon="7.3500"><ele>2700</ele></trkpt>
+      <trkpt lat="46.0800" lon="7.3600"><ele>2800</ele></trkpt>
+      <trkpt lat="46.0700" lon="7.3800"><ele>2600</ele></trkpt>
+      <trkpt lat="46.0600" lon="7.4000"><ele>2300</ele></trkpt>
+      <trkpt lat="46.0450" lon="7.4100"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0350" lon="7.4200"><ele>1900</ele></trkpt>
+      <trkpt lat="46.0289" lon="7.4342"><ele>2006</ele></trkpt>
+      <!-- Day 8: Arolla to La Sage -->
+      <trkpt lat="46.0350" lon="7.4400"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0450" lon="7.4500"><ele>2300</ele></trkpt>
+      <trkpt lat="46.0550" lon="7.4550"><ele>2400</ele></trkpt>
+      <trkpt lat="46.0650" lon="7.4600"><ele>2200</ele></trkpt>
+      <trkpt lat="46.0750" lon="7.4700"><ele>1900</ele></trkpt>
+      <trkpt lat="46.0817" lon="7.4761"><ele>1667</ele></trkpt>
+      <!-- Day 9: La Sage to Cabane de Moiry -->
+      <trkpt lat="46.0850" lon="7.4850"><ele>1800</ele></trkpt>
+      <trkpt lat="46.0900" lon="7.5000"><ele>2100</ele></trkpt>
+      <trkpt lat="46.0950" lon="7.5150"><ele>2400</ele></trkpt>
+      <trkpt lat="46.1000" lon="7.5300"><ele>2700</ele></trkpt>
+      <trkpt lat="46.1050" lon="7.5450"><ele>2800</ele></trkpt>
+      <trkpt lat="46.1103" lon="7.5589"><ele>2825</ele></trkpt>
+      <!-- Day 10: Cabane de Moiry to Zinal -->
+      <trkpt lat="46.1100" lon="7.5650"><ele>2900</ele></trkpt>
+      <trkpt lat="46.1120" lon="7.5750"><ele>2800</ele></trkpt>
+      <trkpt lat="46.1150" lon="7.5850"><ele>2500</ele></trkpt>
+      <trkpt lat="46.1200" lon="7.5950"><ele>2200</ele></trkpt>
+      <trkpt lat="46.1280" lon="7.6100"><ele>1900</ele></trkpt>
+      <trkpt lat="46.1350" lon="7.6258"><ele>1675</ele></trkpt>
+      <!-- Day 11: Zinal to Gruben -->
+      <trkpt lat="46.1400" lon="7.6350"><ele>1800</ele></trkpt>
+      <trkpt lat="46.1450" lon="7.6500"><ele>2100</ele></trkpt>
+      <trkpt lat="46.1500" lon="7.6650"><ele>2400</ele></trkpt>
+      <trkpt lat="46.1550" lon="7.6800"><ele>2700</ele></trkpt>
+      <trkpt lat="46.1600" lon="7.6900"><ele>2900</ele></trkpt>
+      <trkpt lat="46.1650" lon="7.7000"><ele>2600</ele></trkpt>
+      <trkpt lat="46.1700" lon="7.7050"><ele>2200</ele></trkpt>
+      <trkpt lat="46.1731" lon="7.7119"><ele>1822</ele></trkpt>
+      <!-- Day 12: Gruben to St. Niklaus -->
+      <trkpt lat="46.1750" lon="7.7200"><ele>2000</ele></trkpt>
+      <trkpt lat="46.1770" lon="7.7350"><ele>2300</ele></trkpt>
+      <trkpt lat="46.1780" lon="7.7500"><ele>2600</ele></trkpt>
+      <trkpt lat="46.1790" lon="7.7650"><ele>2300</ele></trkpt>
+      <trkpt lat="46.1800" lon="7.7800"><ele>1800</ele></trkpt>
+      <trkpt lat="46.1789" lon="7.8028"><ele>1127</ele></trkpt>
+      <!-- Day 13: St. Niklaus to Europaweg -->
+      <trkpt lat="46.1750" lon="7.8050"><ele>1300</ele></trkpt>
+      <trkpt lat="46.1650" lon="7.8100"><ele>1700</ele></trkpt>
+      <trkpt lat="46.1550" lon="7.8150"><ele>2100</ele></trkpt>
+      <trkpt lat="46.1450" lon="7.8200"><ele>2400</ele></trkpt>
+      <trkpt lat="46.1350" lon="7.8250"><ele>2500</ele></trkpt>
+      <trkpt lat="46.1211" lon="7.8267"><ele>2220</ele></trkpt>
+      <!-- Day 14: Europaweg to Zermatt -->
+      <trkpt lat="46.1100" lon="7.8200"><ele>2300</ele></trkpt>
+      <trkpt lat="46.0950" lon="7.8100"><ele>2200</ele></trkpt>
+      <trkpt lat="46.0800" lon="7.8000"><ele>2000</ele></trkpt>
+      <trkpt lat="46.0650" lon="7.7800"><ele>1800</ele></trkpt>
+      <trkpt lat="46.0450" lon="7.7650"><ele>1600</ele></trkpt>
+      <trkpt lat="46.0300" lon="7.7550"><ele>1400</ele></trkpt>
+      <trkpt lat="46.0207" lon="7.7491"><ele>1608</ele></trkpt>
+    </trkseg>
+  </trk>
+  <wpt lat="45.9237" lon="6.8694">
+    <name>Chamonix</name>
+    <desc>Start of the Haute Route</desc>
+  </wpt>
+  <wpt lat="46.0207" lon="7.7491">
+    <name>Zermatt</name>
+    <desc>End of the Haute Route</desc>
+  </wpt>
+</gpx>

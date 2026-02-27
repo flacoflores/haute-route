@@ -1,0 +1,5 @@
+{
+  "tags": ["during"],
+  "phase": "During",
+  "permalink": "/journal/day-{{ day }}/index.html"
+}

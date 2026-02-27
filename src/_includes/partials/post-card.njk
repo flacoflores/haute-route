@@ -1,0 +1,17 @@
+<article class="post-card">
+  <a href="{{ post.url }}" class="post-card__link">
+    {% if post.data.heroImage %}
+      <div class="post-card__image" style="background-image: url('{{ post.data.heroImage }}')"></div>
+    {% else %}
+      <div class="post-card__image post-card__image--placeholder"></div>
+    {% endif %}
+    <div class="post-card__body">
+      <span class="post-card__phase post-card__phase--{{ post.data.phase | lower }}">{{ post.data.phase }}</span>
+      <h3 class="post-card__title">{{ post.data.title }}</h3>
+      <time class="post-card__date" datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time>
+      {% if post.data.excerpt %}
+        <p class="post-card__excerpt">{{ post.data.excerpt }}</p>
+      {% endif %}
+    </div>
+  </a>
+</article>

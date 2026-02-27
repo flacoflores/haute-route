@@ -1,0 +1,117 @@
+---
+layout: layouts/base.njk
+title: Route Plan
+permalink: /plan/
+---
+
+{% set heroTitle = "Route Plan" %}
+{% set heroSubtitle = "Chamonix to Zermatt — " ~ plan.summary.startDate ~ " to " ~ plan.summary.endDate %}
+{% include "partials/hero.njk" %}
+
+<div class="container page-content">
+
+  {# Summary Stats #}
+  <div class="stats-bar">
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.startDate }} – {{ plan.summary.endDate }}</span>
+      <span class="stats-bar__label">Dates</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.totalDays }}</span>
+      <span class="stats-bar__label">Total Days</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.hikingStages }}</span>
+      <span class="stats-bar__label">Hiking Stages</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.restDays }}</span>
+      <span class="stats-bar__label">Rest / Travel Days</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.totalMiles }} mi</span>
+      <span class="stats-bar__label">Total Distance</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.totalAscent }} ft</span>
+      <span class="stats-bar__label">Total Ascent</span>
+    </div>
+    <div class="stats-bar__item">
+      <span class="stats-bar__value">{{ plan.summary.totalDescent }} ft</span>
+      <span class="stats-bar__label">Total Descent</span>
+    </div>
+  </div>
+
+  {# Day-by-Day Table #}
+  <h2 class="plan-section__title">Day-by-Day Itinerary</h2>
+
+  <div class="plan-table-wrap">
+    <table class="plan-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Stage</th>
+          <th>Date</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Grade</th>
+          <th>Dist (mi)</th>
+          <th>Asc (ft)</th>
+          <th>Desc (ft)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in plan.days %}
+          {% if d.stage %}
+            <tr class="plan-table__row--hiking">
+          {% else %}
+            <tr class="plan-table__row--rest">
+          {% endif %}
+            <td>{{ d.no }}</td>
+            <td class="plan-table__stage">{% if d.stage %}{{ d.stage }}{% else %}-{% endif %}</td>
+            <td class="plan-table__date">{{ d.day }}, {{ d.date }}</td>
+            <td>
+              {% if d.departure %}
+                {{ d.departure }}
+              {% else %}
+                <span class="plan-table__muted">Rest day</span>
+              {% endif %}
+            </td>
+            <td>{{ d.arrival }}</td>
+            <td>
+              {% if d.grade %}
+                {% set gradeColor = d.grade | lower %}
+                {% if "red" in gradeColor %}
+                  <span class="grade grade--red">{{ d.grade }}</span>
+                {% elif "blue" in gradeColor %}
+                  <span class="grade grade--blue">{{ d.grade }}</span>
+                {% elif "black" in gradeColor %}
+                  <span class="grade grade--black">{{ d.grade }}</span>
+                {% elif "purple" in gradeColor %}
+                  <span class="grade grade--purple">{{ d.grade }}</span>
+                {% else %}
+                  {{ d.grade }}
+                {% endif %}
+              {% else %}
+                -
+              {% endif %}
+            </td>
+            <td class="plan-table__num">{% if d.dist %}{{ d.dist }}{% else %}-{% endif %}</td>
+            <td class="plan-table__num">{% if d.asc %}{{ d.asc }}{% else %}-{% endif %}</td>
+            <td class="plan-table__num">{% if d.desc %}{{ d.desc }}{% else %}-{% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {# Grade Legend #}
+  <div class="plan-legend">
+    <span class="plan-legend__label">Trail Grade:</span>
+    <span class="grade grade--blue">Blue</span> Easy &nbsp;
+    <span class="grade grade--red">Red</span> Moderate &nbsp;
+    <span class="grade grade--black">Black</span> Hard &nbsp;
+    <span class="grade grade--purple">Purple</span> Very Hard
+  </div>
+
+</div>
