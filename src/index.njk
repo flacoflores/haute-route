@@ -86,13 +86,13 @@ title: Home
 
 {% block head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/assets/css/map.css">
+<link rel="stylesheet" href="{{ '/assets/css/map.css' | url }}">
 {% endblock %}
 
 {% block scripts %}
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="/assets/js/map.js"></script>
-<script src="/assets/js/countdown.js"></script>
+<script src="{{ '/assets/js/map.js' | url }}"></script>
+<script src="{{ '/assets/js/countdown.js' | url }}"></script>
 <script>
   initMap("mini-map", {
     mini: true,

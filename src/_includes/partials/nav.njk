@@ -1,16 +1,16 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner container">
-    <a href="/" class="nav__logo">{{ site.title }}</a>
+    <a href="{{ '/' | url }}" class="nav__logo">{{ site.title }}</a>
     <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
       <span class="nav__hamburger"></span>
     </button>
     <ul class="nav__menu" id="nav-menu">
-      <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
-      <li><a href="/journal/" {% if page.url | startsWith("/journal") %}aria-current="page"{% endif %}>Journal</a></li>
-      <li><a href="/plan/" {% if page.url == "/plan/" %}aria-current="page"{% endif %}>Plan</a></li>
-      <li><a href="/map/" {% if page.url == "/map/" %}aria-current="page"{% endif %}>Map</a></li>
-      <li><a href="/gear/" {% if page.url == "/gear/" %}aria-current="page"{% endif %}>Gear</a></li>
-      <li><a href="/gallery/" {% if page.url == "/gallery/" %}aria-current="page"{% endif %}>Gallery</a></li>
+      <li><a href="{{ '/' | url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ '/journal/' | url }}" {% if page.url | startsWith("/journal") %}aria-current="page"{% endif %}>Journal</a></li>
+      <li><a href="{{ '/plan/' | url }}" {% if page.url == "/plan/" %}aria-current="page"{% endif %}>Plan</a></li>
+      <li><a href="{{ '/map/' | url }}" {% if page.url == "/map/" %}aria-current="page"{% endif %}>Map</a></li>
+      <li><a href="{{ '/gear/' | url }}" {% if page.url == "/gear/" %}aria-current="page"{% endif %}>Gear</a></li>
+      <li><a href="{{ '/gallery/' | url }}" {% if page.url == "/gallery/" %}aria-current="page"{% endif %}>Gallery</a></li>
     </ul>
   </div>
 </nav>

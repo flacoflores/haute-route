@@ -20,7 +20,7 @@
   <meta name="twitter:title" content="{{ title or site.title }}">
   <meta name="twitter:description" content="{{ description or site.description }}">
 
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
   {% block head %}{% endblock %}
 </head>
 <body>
@@ -34,7 +34,7 @@
 
   {% include "partials/footer.njk" %}
 
-  <script src="/assets/js/nav.js"></script>
+  <script src="{{ '/assets/js/nav.js' | url }}"></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

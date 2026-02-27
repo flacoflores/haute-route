@@ -39,9 +39,9 @@ permalink: /gallery/
 </div>
 
 {% block head %}
-<link rel="stylesheet" href="/assets/css/gallery.css">
+<link rel="stylesheet" href="{{ '/assets/css/gallery.css' | url }}">
 {% endblock %}
 
 {% block scripts %}
-<script src="/assets/js/gallery.js"></script>
+<script src="{{ '/assets/js/gallery.js' | url }}"></script>
 {% endblock %}

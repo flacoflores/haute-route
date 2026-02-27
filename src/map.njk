@@ -48,17 +48,17 @@ permalink: /map/
 
 {% block head %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="/assets/css/map.css">
+<link rel="stylesheet" href="{{ '/assets/css/map.css' | url }}">
 {% endblock %}
 
 {% block scripts %}
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
-<script src="/assets/js/map.js"></script>
+<script src="{{ '/assets/js/map.js' | url }}"></script>
 <script>
   initMap("route-map", {
     mini: false,
-    gpxUrl: "/assets/gpx/haute-route.gpx",
+    gpxUrl: "{{ '/assets/gpx/haute-route.gpx' | url }}",
     stages: {{ route.stages | dump | safe }}
   });
 </script>
